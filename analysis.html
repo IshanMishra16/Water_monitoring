@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
+
+<header>
+  <h2>Analysis</h2>
+  <div>
+    <button onclick="goDashboard()">Dashboard</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<div class="section">
+
+  <h3>Parameter Analysis</h3>
+
+  <select id="param" onchange="analyze()">
+    <option value="temp">Temperature</option>
+    <option value="ph">pH</option>
+    <option value="tds">TDS</option>
+    <option value="turb">Turbidity</option>
+  </select>
+
+  <div class="stats">
+    <p>Min: <span id="min"></span></p>
+    <p>Max: <span id="max"></span></p>
+    <p>Avg: <span id="avg"></span></p>
+  </div>
+
+  <canvas id="chart"></canvas>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

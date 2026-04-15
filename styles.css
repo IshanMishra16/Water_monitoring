@@ -1,0 +1,49 @@
+body {
+  font-family: Arial;
+  background: #0a0e1a;
+  color: white;
+  margin: 0;
+}
+
+.card {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #111827;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input, select {
+  width: 90%;
+  margin: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  background: cyan;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #111827;
+}
+
+.section {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid gray;
+  padding: 10px;
+}

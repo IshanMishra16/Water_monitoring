@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<button onclick="clearData()" style="background:red;color:white;">
+  Clear All Data
+</button>
+<header>
+  <h2>Dashboard</h2>
+  <div>
+    <button onclick="goAnalysis()">Analysis</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<div class="section">
+  <h3>Add Reading</h3>
+
+  <input id="temp" placeholder="Temperature">
+  <input id="ph" placeholder="pH">
+  <input id="tds" placeholder="TDS">
+  <input id="turb" placeholder="Turbidity">
+
+  <button onclick="addData()">Add</button>
+</div>
+
+<div class="section">
+  <h3>Stored Data</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>   <!-- 🔥 NEW -->
+        <th>Temp</th>
+        <th>pH</th>
+        <th>TDS</th>
+        <th>Turbidity</th>
+      </tr>
+    </thead>
+
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
